@@ -1,0 +1,16 @@
+[project]
+name = "flex-limiter"
+version = "0.1.0"
+description = "flex-limiter is a configurable rate-limiting engine. The core package ratelimiter exposes pluggable algorithms like token bucket, leaky bucket, and sliding window."
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.124.4",
+    "pydantic>=2.12.5",
+    "pydantic-settings>=2.12.0",
+    "pytest>=9.0.2",
+    "redis>=7.1.0",
+    "uvicorn>=0.38.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

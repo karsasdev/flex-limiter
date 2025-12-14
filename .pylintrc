@@ -1,0 +1,35 @@
+[MASTER]
+ignore=.venv,env,migrations,alembic
+load-plugins=pylint_pydantic
+
+[MESSAGES CONTROL]
+disable=
+    missing-docstring,
+    invalid-name,
+    too-few-public-methods,
+    too-many-arguments,
+    no-member,
+    duplicate-code,
+    too-many-instance-attributes,
+    too-many-locals,
+    too-many-branches,
+    too-many-statements,
+    broad-exception-caught
+
+[TYPECHECK]
+generated-members=Depends,Query,Body,Path
+
+[FORMAT]
+max-line-length=160
+
+[DESIGN]
+max-args=7
+max-attributes=10
+max-locals=15
+
+[REPORTS]
+output-format=colorized
+score=yes
+
+[PYDANTIC]
+allow-any = true
